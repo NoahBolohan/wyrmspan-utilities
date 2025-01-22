@@ -6,6 +6,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+    <script src="js/misc_scripts.js"></script>
 	<script src="js/score_sheet_automa_scripts.js"></script>
 </head>
 
@@ -84,11 +85,13 @@
                     <thead>
 
                         <tr>
-                            <th class="bg-info" style="width:60%;"></th>
+                            <th class="bg-info" style="width:40%;">Player</th>
 
-                            <th class="bg-info" style="width:20%">Player</th>
+                            <th class="bg-info" style="width:10%"></th>
 
-                            <th class="bg-info" style="width:20%">Automa</th>
+                            <th class="bg-info" style="width:10%"></th>
+
+                            <th class="bg-info" style="width:40%; text-align: right;">Automa</th>
                         </tr>
                     </thead>
                 
@@ -96,11 +99,15 @@
 
                         <tr>
 
-                            <th class="bg-info">Markers on the Dragon Guild</th>
+                            <th class="bg-info">Markers on the dragon guild</th>
 
                             <td><input type="number" id="cell_player_markers_on_dragon_guild" name="player_markers_on_dragon_guild" min="0" required></td>
 
-                            <td class="bg-secondary"></td>
+                            <td class="bg-info">
+                                <input type="number" id="cell_automa_dragon_cards" name="automa_dragon_cards" min="0" required>
+                            </td>
+
+                            <th class="bg-info">Number of dragon cards</th>
                         </tr>
         
                         <tr>
@@ -109,8 +116,12 @@
                             <td class="bg-info">
                                 <input type="number" id="cell_player_printed_on_dragons" name="player_printed_on_dragons" min="0" required>
                             </td>
-                            
-                            <td class="bg-secondary"></td>
+
+                            <td class="bg-info">
+                                <input type="number" id="cell_automa_cave_cards" name="automa_cave_cards" min="0" required>
+                            </td>
+
+                            <th class="bg-info">Number of cave cards</th>
                         </tr>
 
                         <tr>
@@ -119,8 +130,12 @@
                             <td class="bg-info">
                                 <input type="number" id="cell_player_printed_on_dragons" name="player_printed_on_dragons" min="0" required>
                             </td>
-                            
-                            <td class="bg-secondary"></td>
+
+                            <td class="bg-info">
+                                <input type="number" id="cell_automa_steps_from_last_brown_space" name="automa_steps_from_last_brown_space" min="0" required>
+                            </td>
+
+                            <th class="bg-info">Steps from last brown space</th>
                         </tr>
 
                         <tr>
@@ -129,8 +144,12 @@
                             <td class="bg-info">
                                 <input type="number" id="cell_player_eggs" name="player_eggs" min="0" required>
                             </td>
-                            
-                            <td class="bg-secondary"></td>
+
+                            <td class="bg-info">
+                                <input type="number" id="cell_automa_public_objectives" name="automa_public_objectives" min="0" required>
+                            </td>
+
+                            <th class="bg-info">Public objectives</th>
                         </tr>
 
                         <tr>
@@ -140,7 +159,13 @@
                                 <input type="number" id="cell_player_cached_resources" name="player_cached_resources" min="0" required>
                             </td>
                             
-                            <td class="bg-secondary"></td>
+                            <td class="bg-secondary">
+                                <input class="is_hidden" type="number" id="cell_automa_dragon_guild_fixed_vp" name="automa_dragon_guild_fixed_vp" min="0">
+                            </td>
+
+                            <th class="bg-info">
+                                <div id="cell_dragon_guild_fixed_vp"></div>
+                            </th>
                         </tr>
 
                         <tr>
@@ -151,16 +176,20 @@
                             </td>
                             
                             <td class="bg-secondary"></td>
+
+                            <th class="bg-info"></th>
                         </tr>
 
                         <tr>
-                            <th class="bg-info" scope="row">&#x1F409; from public resources</th>
+                            <th class="bg-info" scope="row">&#x1F409; from public objectives</th>
 
                             <td class="bg-info">
-                                <input type="number" id="cell_player_public_resources" name="player_public_resources" min="0" required>
+                                <input type="number" id="cell_player_public_objectives" name="player_public_objectives" min="0" required>
                             </td>
-                            
+
                             <td class="bg-secondary"></td>
+
+                            <th class="bg-info"></th>
                         </tr>
 
                         <tr>
@@ -171,6 +200,8 @@
                             </td>
                             
                             <td class="bg-secondary"></td>
+
+                            <th class="bg-info"></th>
                         </tr>
         
                         <tr>
@@ -184,6 +215,8 @@
                             <td class="bg-success">
                                 <div id="cell_automa_total_score"></div>
                             </td>
+
+                            <th class="bg-success"></th>
                         </tr>
                     </tbody>
                 </table>

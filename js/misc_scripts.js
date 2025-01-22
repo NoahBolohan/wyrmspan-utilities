@@ -1,4 +1,3 @@
-
 // Custom show div
 function custom_show_div(div_id) {
     $(div_id).css(

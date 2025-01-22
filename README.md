@@ -10,6 +10,10 @@ Some of my Wyrmspan utilities. Includes:
 - [Wyrmspan Utilities website link](https://noahbolohan.github.io/wyrmspan-utilities/)
 - [Google Sheets tracker](https://docs.google.com/spreadsheets/d/1K600qeRyYevSrMBUyevP4sZ4vRIBzq4ggCl3cLjHAvc/edit?gid=0#gid=0)
 
+## Credits
+
+Background art by [Clémentine Campardou](https://blule.fr/collections/dragons)
+
 ## Have feedback/requests/issues?
 
 Please [create a new issue](https://github.com/NoahBolohan/wyrmspan-utilities/issues/new?template=Blank+issue). PRs are definitely welcome, but please run your ideas by me before putting in a lot of work. Thanks!
