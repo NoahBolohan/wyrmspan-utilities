@@ -10,7 +10,12 @@
 	<script src="js/score_sheet_automa_scripts.js"></script>
 </head>
 
-<body class="parallax" onload="on_load()">
+<body class="parallax" onload="on_load()" id="automa_score_sheet_body">
+
+    <!--
+    Data attributes of automa_score_sheet_body:
+        automa_points_per_dragon_card
+    -->
 
     <form class="google_form" id="google_form" name="google_form"  target="_top" method="POST" onsubmit="myFunction()" action="https://script.google.com/macros/s/AKfycbwm0-b47heUxm6uNym732n3WV6jMX7uVLaIWoeC7tV2MnZIJFjiogWysy5mFSZBRGs1Aw/exec">
 
@@ -46,17 +51,17 @@
                             <fieldset class="row p-0 justify-content-between margin_auto" id="row_automa_difficulty" name="automa_difficulty">
         
                                 <label class="col-4 p-0">
-                                    <input type="radio" name="automa_difficulty" 
+                                    <input type="radio" id="radio_automa_difficulty_1" name="automa_difficulty" 
                                         value="1"> 1
                                 </label>
         
                                 <label class="col-4 p-0">
-                                    <input type="radio" name="automa_difficulty" 
+                                    <input type="radio" id="radio_automa_difficulty_2" name="automa_difficulty" 
                                         value="2"> 2
                                 </label>
         
                                 <label class="col-4 p-0">
-                                    <input type="radio" name="automa_difficulty" 
+                                    <input type="radio" id="radio_automa_difficulty_3" name="automa_difficulty" 
                                         value="3"> 3
                                 </label>
                             </fieldset>
@@ -128,7 +133,7 @@
                             <th class="bg-info" scope="row">&#x1F409; from end-game abilities (&#x1F3F4;)</th>
 
                             <td class="bg-info">
-                                <input type="number" id="cell_player_printed_on_dragons" name="player_printed_on_dragons" min="0" required>
+                                <input type="number" id="cell_player_end_game_abilities" name="player_end_game_abilities" min="0" required>
                             </td>
 
                             <td class="bg-info">
@@ -196,7 +201,7 @@
                             <th class="bg-info" scope="row">&#x1F409; from remaining coins & items</th>
 
                             <td class="bg-info">
-                                <input type="number" id="cell_player_remaining" name="player_remaining" min="0" required>
+                                <input type="number" id="cell_player_remaining_resources" name="player_remaining_resources" min="0" required>
                             </td>
                             
                             <td class="bg-secondary"></td>

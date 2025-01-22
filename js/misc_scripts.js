@@ -45,3 +45,14 @@ function custom_hide_column(column_id) {
         "none"
     );
 }
+
+// Parse int, with NaN returning 0
+function parseNaNOrInt(val) {
+
+    var parsed_int = parseInt(val);
+
+    if (isNaN(parsed_int)) {
+      return 0;
+    }
+    return parsed_int;
+}
