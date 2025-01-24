@@ -17,7 +17,7 @@ $(document).ready(
                     "click",
                     function() {
 
-                        var width_p = 28;
+                        var width_p = 55;
 
                         $("#score_sheet_body").data(
                             "n_players",
