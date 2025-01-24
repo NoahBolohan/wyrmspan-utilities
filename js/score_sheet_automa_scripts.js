@@ -41,10 +41,10 @@ $(document).ready(
                         "Dragon guild (fixed VP)"
                     );
 
-                    $("#cell_dragon_guild_fixed_vp").prop(
-                        "requried",
-                        true
-                    );
+                    // $("#cell_dragon_guild_fixed_vp").prop(
+                    //     "required",
+                    //     true
+                    // );
                 } 
                 else {
 
@@ -52,10 +52,10 @@ $(document).ready(
 
                     $("#cell_dragon_guild_fixed_vp").text("");
 
-                    $("#cell_dragon_guild_fixed_vp").prop(
-                        "required",
-                        false
-                    );
+                    // $("#cell_dragon_guild_fixed_vp").prop(
+                    //     "required",
+                    //     false
+                    // );
 
                     $("#cell_automa_dragon_guild_fixed_vp").val("");
 
@@ -287,3 +287,35 @@ $(document).ready(
         )
     }
 )
+
+// Populate certain divs before submitting form
+function populate_form_data() {
+
+    // Player: total score
+    $("#input_player_total_score").val(
+        $("#cell_player_total_score").text()
+    )
+
+    // Automa: total score
+    $("#input_automa_total_score").val(
+        $("#cell_automa_total_score").text()
+    )
+
+    // Ravel mode checkbox
+    if(document.getElementById("col_ravel_mode_checkbox").checked) {
+        document.getElementById("col_ravel_mode_checkbox_hidden").disabled = true;
+
+    }
+    else {
+
+        $("#cell_dragon_guild_fixed_vp").prop(
+            "required",
+            false
+        );
+
+        // Automa: dragon guild - fixed VP
+        if ($("#cell_automa_dragon_guild_fixed_vp").val() == "") {
+            $("#cell_automa_dragon_guild_fixed_vp").val(0);
+        }
+    }
+}
