@@ -40,23 +40,12 @@ $(document).ready(
                     $("#cell_dragon_guild_fixed_vp").text(
                         "Dragon guild (fixed VP)"
                     );
-
-                    // $("#cell_dragon_guild_fixed_vp").prop(
-                    //     "required",
-                    //     true
-                    // );
                 } 
                 else {
 
                     custom_hide_div("#cell_automa_dragon_guild_fixed_vp");
 
                     $("#cell_dragon_guild_fixed_vp").text("");
-
-                    // $("#cell_dragon_guild_fixed_vp").prop(
-                    //     "required",
-                    //     false
-                    // );
-
                     $("#cell_automa_dragon_guild_fixed_vp").val("");
 
                     recompute_automa_total_score();
@@ -205,7 +194,7 @@ function recompute_automa_total_score() {
 
     var total_score = $("#automa_score_sheet_body").data("automa_points_per_dragon_card") * parseNaNOrInt(
         $("#cell_automa_dragon_cards").val()
-    ) + parseNaNOrInt(
+    ) + 2 * parseNaNOrInt(
         $("#cell_automa_cave_cards").val()
     ) + parseNaNOrInt(
         $("#cell_automa_steps_from_last_brown_space").val()
