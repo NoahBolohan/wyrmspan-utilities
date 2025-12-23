@@ -63,7 +63,7 @@ function generate_row_headers(width_p) {
             scope : "row"
         }
     ).html(
-        "&#x1F409; printed on dragons"
+        "<img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> printed on dragons"
     ).appendTo("#row_printed_on_dragons");
 
     // End-game abilities
@@ -74,7 +74,7 @@ function generate_row_headers(width_p) {
             scope : "row"
         }
     ).html(
-        "&#x1F409; from end-game abilities (&#x1F3F4;)"
+        "<img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> from end-game abilities (<img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/end_game.png'>)"
     ).appendTo("#row_end-game_abilities");
 
     // Eggs
@@ -85,7 +85,7 @@ function generate_row_headers(width_p) {
             scope : "row"
         }
     ).html(
-        "1 &#x1F409; per egg"
+        "1 <img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> per egg"
     ).appendTo("#row_eggs");
 
     // Cached resources
@@ -96,7 +96,7 @@ function generate_row_headers(width_p) {
             scope : "row"
         }
     ).html(
-        "1 &#x1F409; per cached resource"
+        "1 <img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> per cached resource"
     ).appendTo("#row_cached_resources");
 
     // Tucked cards
@@ -107,7 +107,7 @@ function generate_row_headers(width_p) {
             scope : "row"
         }
     ).html(
-        "1 &#x1F409; per tucked card"
+        "1 <img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> per tucked card"
     ).appendTo("#row_tucked_cards");
 
     // Public objectives
@@ -118,7 +118,7 @@ function generate_row_headers(width_p) {
             scope : "row"
         }
     ).html(
-        "&#x1F409; from public objectives"
+        "<img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> from public objectives"
     ).appendTo("#row_public_objectives");
 
     // Remaining resources
@@ -129,7 +129,7 @@ function generate_row_headers(width_p) {
             scope : "row"
         }
     ).html(
-        "&#x1F409; from remaining coins & items"
+        "<img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> from remaining coins & items"
     ).appendTo("#row_remaining_resources");
 
     // Total
