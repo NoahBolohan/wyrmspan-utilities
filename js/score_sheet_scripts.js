@@ -51,7 +51,7 @@ function generate_row_headers(width_p) {
             style : `width:${width_p}%`,
             scope : "row"
         }
-    ).text(
+    ).html(
         "Markers on the dragon guild"
     ).appendTo("#row_markers_on_dragon_guild");
 
@@ -62,7 +62,7 @@ function generate_row_headers(width_p) {
             style : `width:${width_p}%`,
             scope : "row"
         }
-    ).text(
+    ).html(
         "&#x1F409; printed on dragons"
     ).appendTo("#row_printed_on_dragons");
 
@@ -73,7 +73,7 @@ function generate_row_headers(width_p) {
             style : `width:${width_p}%`,
             scope : "row"
         }
-    ).text(
+    ).html(
         "&#x1F409; from end-game abilities (&#x1F3F4;)"
     ).appendTo("#row_end-game_abilities");
 
@@ -84,7 +84,7 @@ function generate_row_headers(width_p) {
             style : `width:${width_p}%`,
             scope : "row"
         }
-    ).text(
+    ).html(
         "1 &#x1F409; per egg"
     ).appendTo("#row_eggs");
 
@@ -95,7 +95,7 @@ function generate_row_headers(width_p) {
             style : `width:${width_p}%`,
             scope : "row"
         }
-    ).text(
+    ).html(
         "1 &#x1F409; per cached resource"
     ).appendTo("#row_cached_resources");
 
@@ -106,7 +106,7 @@ function generate_row_headers(width_p) {
             style : `width:${width_p}%`,
             scope : "row"
         }
-    ).text(
+    ).html(
         "1 &#x1F409; per tucked card"
     ).appendTo("#row_tucked_cards");
 
@@ -117,7 +117,7 @@ function generate_row_headers(width_p) {
             style : `width:${width_p}%`,
             scope : "row"
         }
-    ).text(
+    ).html(
         "&#x1F409; from public objectives"
     ).appendTo("#row_public_objectives");
 
@@ -128,7 +128,7 @@ function generate_row_headers(width_p) {
             style : `width:${width_p}%`,
             scope : "row"
         }
-    ).text(
+    ).html(
         "&#x1F409; from remaining coins & items"
     ).appendTo("#row_remaining_resources");
 
@@ -138,7 +138,7 @@ function generate_row_headers(width_p) {
             class : "bg-success",
             style : `width:${width_p}%;`
         }
-    ).text(
+    ).html(
         "Total"
     ).appendTo("#row_total");
 }
