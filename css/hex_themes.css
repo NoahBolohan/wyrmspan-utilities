@@ -1,0 +1,112 @@
+/*
+Theme template:
+
+[data-theme="theme_name"] {
+    --font-color-headers:;
+    --font-color-buttons:;
+    --heading-color:;
+
+    --card-header-color:;
+    --card-background-color:;
+
+    --button-start-color:;
+    --button-score-sheet-automa-color:;
+    --button-score-sheet-color:;
+    --button-settings-color:;
+    --button-dropdown-menu-color:;
+    --button-reset-color:;
+    --button-submit-color:;
+    --button-return-color:;
+    --button-automa-action-color:;
+    --button-round-end-goal-color:;
+
+    --cell-vertical-color:;
+    --cell-info-color:;
+    --cell-input-color:;
+    --cell-disabled-color:;
+    --cell-total-color:;
+}
+
+*/
+
+:root {
+    --a:#eca9a5;
+    --a:#65bcb5;
+    --a:#fad243;
+    --a:#c17a35;
+    --a:#7176b6;
+    --a:#fefefe;
+    --a:#000100;
+
+    --font-color-headers:#000100;
+    --font-color-buttons:#000100;
+    --heading-color:#7176b6;
+
+    --card-header-color:#7176b6;
+    --card-background-color:#c17a35;
+
+    --button-start-color:#fad243;
+    --button-score-sheet-automa-color:#65bcb5;
+    --button-score-sheet-color:#eca9a5;
+    --button-settings-color:#c17a35;
+
+    --button-dropdown-menu-color:#65bcb5;
+    --button-reset-color:#65bcb5;
+    --button-submit-color:#fad243;
+    --button-return-color:#c17a35;
+    --button-automa-action-color:#7176b6;
+    --button-player-won-color:#fad243;
+    --button-we-tied-color:#65bcb5;
+    --button-automa-score-color:#eca9a5;
+
+    --round-end-plus-color:#65bcb5;
+    
+    --button-round-end-goal-color:#eca9a5;
+
+    --cell-vertical-color:#eca9a5;
+    --cell-info-color:#fad243;
+    --cell-input-color:#65bcb5;
+    --cell-disabled-color:#7176b6;
+    --cell-total-color:#eca9a5;
+    --cell-automa-action:#fefefe;
+}
+
+[data-theme="default"] {
+    --a:#eca9a5;
+    --a:#65bcb5;
+    --a:#fad243;
+    --a:#c17a35;
+    --a:#7176b6;
+    --a:#fefefe;
+    --a:#000100;
+
+    --font-color-headers:#000100;
+    --font-color-buttons:#000100;
+    --heading-color:#7176b6;
+
+    --card-header-color:#7176b6;
+    --card-background-color:#c17a35;
+
+    --button-start-color:#fad243;
+    --button-score-sheet-automa-color:#65bcb5;
+    --button-score-sheet-color:#eca9a5;
+    --button-settings-color:#c17a35;
+    --button-dropdown-menu-color:#65bcb5;
+    --button-reset-color:#65bcb5;
+    --button-submit-color:#fad243;
+    --button-return-color:#c17a35;
+    --button-automa-action-color:#7176b6;
+    --button-round-end-goal-color:#eca9a5;
+    --button-player-won-color:#fad243;
+    --button-we-tied-color:#65bcb5;
+    --button-automa-score-color:#eca9a5;
+
+    --round-end-plus-color:#65bcb5;
+
+    --cell-vertical-color:#eca9a5;
+    --cell-info-color:#fad243;
+    --cell-input-color:#65bcb5;
+    --cell-disabled-color:#7176b6;
+    --cell-total-color:#eca9a5;
+    --cell-automa-action:#fefefe;
+}

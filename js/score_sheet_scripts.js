@@ -26,7 +26,7 @@ $(document).ready(
                         generate_row_headers(width_p);
                         generate_n_score_columns(value, (100-width_p)/value);
                         $(`#modal_n_players`).modal("hide");
-                        custom_show_div("#row_score_sheet");
+                        show_height_hidden("#row_score_sheet");
                     }
                 );
             }

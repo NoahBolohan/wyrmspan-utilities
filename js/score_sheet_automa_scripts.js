@@ -35,7 +35,7 @@ $(document).ready(
             function () {
                 if ($("#col_ravel_mode_checkbox").is(":checked")) {
 
-                    custom_show_div("#cell_automa_dragon_guild_fixed_vp");
+                    show_height_hidden("#cell_automa_dragon_guild_fixed_vp");
 
                     $("#cell_dragon_guild_fixed_vp").text(
                         "Dragon guild (fixed VP)"
@@ -43,7 +43,7 @@ $(document).ready(
                 } 
                 else {
 
-                    custom_hide_div("#cell_automa_dragon_guild_fixed_vp");
+                    hide_height_hidden("#cell_automa_dragon_guild_fixed_vp");
 
                     $("#cell_dragon_guild_fixed_vp").text("");
                     $("#cell_automa_dragon_guild_fixed_vp").val("");
