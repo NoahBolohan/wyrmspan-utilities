@@ -39,7 +39,7 @@ function generate_row_headers(width_p) {
     // Player names
     $("<td>").attr(
         {
-            class : "bg-info",
+            class : "cell-info",
             style : `width:${width_p}%;`
         }
     ).appendTo("#row_player_names");
@@ -47,7 +47,7 @@ function generate_row_headers(width_p) {
     // Markers on the dragon guild
     $("<th>").attr(
         {
-            class : "bg-info",
+            class : "cell-info",
             style : `width:${width_p}%`,
             scope : "row"
         }
@@ -58,7 +58,7 @@ function generate_row_headers(width_p) {
     // Amount printed on dragons
     $("<th>").attr(
         {
-            class : "bg-info",
+            class : "cell-info",
             style : `width:${width_p}%`,
             scope : "row"
         }
@@ -69,7 +69,7 @@ function generate_row_headers(width_p) {
     // End-game abilities
     $("<th>").attr(
         {
-            class : "bg-info",
+            class : "cell-info",
             style : `width:${width_p}%`,
             scope : "row"
         }
@@ -80,7 +80,7 @@ function generate_row_headers(width_p) {
     // Eggs
     $("<th>").attr(
         {
-            class : "bg-info",
+            class : "cell-info",
             style : `width:${width_p}%`,
             scope : "row"
         }
@@ -91,7 +91,7 @@ function generate_row_headers(width_p) {
     // Cached resources
     $("<th>").attr(
         {
-            class : "bg-info",
+            class : "cell-info",
             style : `width:${width_p}%`,
             scope : "row"
         }
@@ -102,7 +102,7 @@ function generate_row_headers(width_p) {
     // Tucked cards
     $("<th>").attr(
         {
-            class : "bg-info",
+            class : "cell-info",
             style : `width:${width_p}%`,
             scope : "row"
         }
@@ -113,7 +113,7 @@ function generate_row_headers(width_p) {
     // Public objectives
     $("<th>").attr(
         {
-            class : "bg-info",
+            class : "cell-info",
             style : `width:${width_p}%`,
             scope : "row"
         }
@@ -124,7 +124,7 @@ function generate_row_headers(width_p) {
     // Remaining resources
     $("<th>").attr(
         {
-            class : "bg-info",
+            class : "cell-info",
             style : `width:${width_p}%`,
             scope : "row"
         }
@@ -135,7 +135,7 @@ function generate_row_headers(width_p) {
     // Total
     $("<td>").attr(
         {
-            class : "bg-success",
+            class : "cell-total",
             style : `width:${width_p}%;`
         }
     ).html(
@@ -149,7 +149,7 @@ function generate_n_score_columns(n_players, width_p) {
         // Player names
         var cell = $("<th>").attr(
             {
-                class : "bg-info",
+                class : "cell-info",
                 id : `player_${i}_name`,
                 style : `width:${width_p}%`
             }
@@ -176,7 +176,7 @@ function generate_n_score_columns(n_players, width_p) {
         // markers on dragon guild
         var cell = $("<td>").attr(
             {
-                class : "bg-info",
+                class : "cell-info",
                 id : `col_player_${i}_markers_on_dragon_guild`,
                 style : `width:${width_p}%`
             }
@@ -196,7 +196,7 @@ function generate_n_score_columns(n_players, width_p) {
         // Printed on dragons
         var cell = $("<td>").attr(
             {
-                class : "bg-info",
+                class : "cell-info",
                 id : `col_player_${i}_printed_on_dragons`,
                 style : `width:${width_p}%`
             }
@@ -216,7 +216,7 @@ function generate_n_score_columns(n_players, width_p) {
         // End-game abilities
         var cell = $("<td>").attr(
             {
-                class : "bg-info",
+                class : "cell-info",
                 id : `col_player_${i}_end-game_abilities`,
                 style : `width:${width_p}%`
             }
@@ -236,7 +236,7 @@ function generate_n_score_columns(n_players, width_p) {
         // Eggs
         var cell = $("<td>").attr(
             {
-                class : "bg-info",
+                class : "cell-info",
                 id : `col_player_${i}_eggs`,
                 style : `width:${width_p}%`
             }
@@ -256,7 +256,7 @@ function generate_n_score_columns(n_players, width_p) {
         // Cached resources
         var cell = $("<td>").attr(
             {
-                class : "bg-info",
+                class : "cell-info",
                 id : `col_player_${i}_cached_resources`,
                 style : `width:${width_p}%`
             }
@@ -276,7 +276,7 @@ function generate_n_score_columns(n_players, width_p) {
         // Tucked cards
         var cell = $("<td>").attr(
             {
-                class : "bg-info",
+                class : "cell-info",
                 id : `col_player_${i}_tucked_cards`,
                 style : `width:${width_p}%`
             }
@@ -296,7 +296,7 @@ function generate_n_score_columns(n_players, width_p) {
         // Public objectives
         var cell = $("<td>").attr(
             {
-                class : "bg-info",
+                class : "cell-info",
                 id : `col_player_${i}_public_objectives`,
                 style : `width:${width_p}%`
             }
@@ -313,7 +313,7 @@ function generate_n_score_columns(n_players, width_p) {
         // Remaining resources
         var cell = $("<td>").attr(
             {
-                class : "bg-info",
+                class : "cell-info",
                 id : `col_player_${i}_remaining_resources`,
                 style : `width:${width_p}%`
             }
@@ -331,7 +331,7 @@ function generate_n_score_columns(n_players, width_p) {
         // Total
         var cell = $("<td>").attr(
             {
-                class : "bg-success",
+                class : "cell-total",
                 id : `col_player_${i}_total_score`,
                 style : `width:${width_p}%`
             }
