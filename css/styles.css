@@ -19,7 +19,7 @@
 
 html *
 {
-   font-size: 15pt;
+   /* font-size: 15pt; */
    color: #000;
    font-family: "Amarante" !important;
 }
@@ -79,7 +79,7 @@ table {
   }
 
 .nav-button {
-    font-size: 18pt;
+    font-size: 15pt;
 }
 
 .round-end-goal-button {
