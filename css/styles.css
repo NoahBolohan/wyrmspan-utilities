@@ -13,21 +13,12 @@
     margin-right : auto;
 }
 
-.fonttest {
-    font-family: "Amarante";
-}
 
 html *
 {
-   /* font-size: 15pt; */
-   color: #000;
+   font-size: 2vh;
+   color: rgba(var(--font-color-buttons));
    font-family: "Amarante" !important;
-}
-
-.amarante-regular {
-  font-family: "Amarante", serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 body {
@@ -52,9 +43,19 @@ body {
 
 table td {
     position: relative;
-  }
+}
+
+td, tr, th {
+    opacity: 0.95;
+    border : 1px solid rgba(var(--font-color-buttons));
+}
+
+.score_sheet_cell_no_padding {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
   
-  table td input {
+table td input {
     position: absolute;
     display: block;
     top:0;
@@ -63,9 +64,8 @@ table td {
     height: 100%;
     width: 100%;
     border: none;
-    padding: 10px;
     box-sizing: border-box;
-  }
+}
 
 table {
     table-layout: fixed;
@@ -75,11 +75,15 @@ table {
 .input-vertical {
     writing-mode: vertical-lr;
     text-orientation: sideways;
-    transform: rotate(180deg);
-  }
+    -moz-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -ms-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+}
 
 .nav-button {
-    font-size: 15pt;
+    font-size: 2vh;
 }
 
 .round-end-goal-button {
@@ -87,12 +91,32 @@ table {
     aspect-ratio : 1 / 1;
 }
 
-h1 {
-    font-size: 25pt;
+.h1 {
+    font-size: 2.67vh;
+    color: rgba(var(--font-color-headers));
 }
 
-h2 {
-    font-size: 20pt;
+.h2 {
+    font-size: 2vh;
+    color: rgba(var(--font-color-headers));
+}
+
+.how-to-card * {
+    font-size:1.67vh;
+}
+
+.hr1 {
+    border-color:rgba(var(--font-color-buttons));
+    margin-top : 1vh;
+    margin-bottom : 1vh;
+    height:2px;
+}
+
+.hr2 {
+    border-color:rgba(var(--font-color-buttons));
+    margin-top : 0.5vh;
+    margin-bottom : 0.5vh;
+    height:1px;
 }
 
 .centered-text {
@@ -448,4 +472,40 @@ outline: 2px solid rgba(var(--font-color-buttons));
 .btn-return:focus {
     outline: 1px solid rgba(var(--font-color-headers))!important;
     background-color:rgba(var(--button-return-color));
+}
+
+/*Cells*/
+.cell-vertical {
+    padding: 0!important;
+    background-color:rgba(var(--cell-vertical-color))!important;
+    color:rgba(var(--font-color-headers))!important;
+    text-align: center;
+}
+
+.cell-info {
+    background-color:rgba(var(--cell-info-color))!important;
+    color:rgba(var(--font-color-buttons))!important;
+    vertical-align: middle;
+}
+
+.cell-input {
+    background-color:rgba(var(--cell-input-color))!important;
+    vertical-align: middle;
+}
+
+.cell-disabled {
+    background-color:rgba(var(--cell-disabled-color))!important;
+    vertical-align: middle;
+}
+
+.cell-total {
+    background-color:rgba(var(--cell-total-color))!important;
+    color:rgba(var(--font-color-headers))!important;
+    vertical-align: middle;
+}
+
+.cell-automa-action {
+    background-color:rgba(var(--cell-automa-action))!important;
+    color:rgba(var(--font-color-headers))!important;
+    vertical-align: middle;
 }

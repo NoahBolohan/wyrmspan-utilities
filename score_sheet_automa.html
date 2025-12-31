@@ -35,18 +35,21 @@
 
             <div class="container-fluid" id="container_header">
 
-                <div class="row mt-1 justify-content-center margin_auto">
+                <div class="row justify-content-center align-items-center" style="height:7vh;" id="row_header">
 
-                    <div class="col-auto p-0 card">
+                    <div class="col header-background" style="height:7vh;"></div>
 
-                        <div class="py-0 card-header text-center">
+                    <div class="row justify-content-between align-items-center" style="height:7vh;" id="row_header_1">
 
-                            <h1 class="m-0 h1">Score sheet - Automa</h2>
+                        <div class="col-auto m-0 px-0 text-center h1">Score sheet - Automa</div>
+
+                        <div class="col-auto p-0 text-end">
+                            <a class="btn nav-button btn-return" href="/" id="button_return_to_home_page">Return home</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="card mt-3">
+                <div class="row justify-content-between align-items-center" style="height:7vh;">
 
                     <div class="card-header py-1 text-center" id="row_difficulty_header">
                         <h2 class="p-0 m-0 h2">Automa options</h2>
@@ -56,11 +59,11 @@
 
                         <div class="row p-0 margin_auto" id="row_automa_difficulty">
 
-                            <div class="col-3">
-                                Difficulty
+                            <div class="col-auto">
+                                Difficulty:
                             </div>
             
-                            <div class="col-4">
+                            <div class="col-3 p-0">
                                 
                                 <fieldset class="row p-0 justify-content-between margin_auto" id="row_automa_difficulty" name="automa_difficulty">
             
@@ -91,36 +94,26 @@
                                 <input id="col_ravel_mode_checkbox" name="ravel_mode" type="checkbox" value="yes">
                             </div>
                         </div>
-
-                        <!-- <div class="row p-0 margin_auto" id="row_ravel_mode">
-
-                            <div class="col-6">
-                                Ravel mode:
-                            </div>
-            
-                            <div class="col-6">
-                                
-                                <input id="col_ravel_mode_checkbox_hidden" name="ravel_mode" type="hidden" value="no"></input>
-                                <input id="col_ravel_mode_checkbox" name="ravel_mode" type="checkbox" value="yes">
-                            </div>
-                        </div> -->
                     </div>
                 </div>
+            </div>
 
-                <div class="row p-0 mt-3 justify-content-center margin_auto" id="row_score_sheet">
+            <div class="container-fluid" id="container_header">
+
+                <div class="row p-0 justify-content-center margin_auto" style="height:75vh;margin-top:1vh;margin-bottom:2vh;" id="row_score_sheet">
 
                     <table class="col-12 mb-0 table table-bordered">
 
                         <thead>
 
                             <tr>
-                                <th class="bg-info" style="width:40%;">Player</th>
+                                <th class="cell-info" style="width:40%;">Player</th>
 
-                                <th class="bg-info" style="width:10%"></th>
+                                <th class="cell-info" style="width:10%"></th>
 
-                                <th class="bg-info" style="width:10%"></th>
+                                <th class="cell-info" style="width:10%"></th>
 
-                                <th class="bg-info" style="width:40%; text-align: right;">Automa</th>
+                                <th class="cell-info" style="width:40%; text-align: right;">Automa</th>
                             </tr>
                         </thead>
                     
@@ -128,124 +121,124 @@
 
                             <tr>
 
-                                <th class="bg-info">Markers on the dragon guild</th>
+                                <th class="cell-info">Markers on <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/dragon_guild.png"></th>
 
                                 <td><input type="number" id="cell_player_markers_on_dragon_guild" name="player_markers_on_dragon_guild" min="0" required></td>
 
-                                <td class="bg-info">
+                                <td class="cell-info">
                                     <input type="number" id="cell_automa_dragon_cards" name="automa_dragon_cards" min="0" required>
                                 </td>
 
-                                <th class="bg-info">1 <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png"> per <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/dragon_card.png"></th>
+                                <th class="cell-info">1 <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png"> per <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/dragon_card.png"></th>
                             </tr>
             
                             <tr>
-                                <th class="bg-info" scope="row"><img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png"> printed on dragons</th>
+                                <th class="cell-info" scope="row"><img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png"> on dragons</th>
 
-                                <td class="bg-info">
+                                <td class="cell-info">
                                     <input type="number" id="cell_player_printed_on_dragons" name="player_printed_on_dragons" min="0" required>
                                 </td>
 
-                                <td class="bg-info">
+                                <td class="cell-info">
                                     <input type="number" id="cell_automa_cave_cards" name="automa_cave_cards" min="0" required>
                                 </td>
 
-                                <th class="bg-info">1 <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png"> per <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/cave_card.png"></th>
+                                <th class="cell-info">1 <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png"> per <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/cave_card.png"></th>
                             </tr>
 
                             <tr>
-                                <th class="bg-info" scope="row"><img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png"> from end-game abilities (<img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/end_game.png">)</th>
+                                <th class="cell-info" scope="row"><img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png"> from <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/end_game.png"></th>
 
-                                <td class="bg-info">
+                                <td class="cell-info">
                                     <input type="number" id="cell_player_end_game_abilities" name="player_end_game_abilities" min="0" required>
                                 </td>
 
-                                <td class="bg-info">
+                                <td class="cell-info">
                                     <input type="number" id="cell_automa_steps_from_last_brown_space" name="automa_steps_from_last_brown_space" min="0" required>
                                 </td>
 
-                                <th class="bg-info">Steps from last brown space</th>
+                                <th class="cell-info">Steps from last brown space</th>
                             </tr>
 
                             <tr>
-                                <th class="bg-info" scope="row">1 <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png"> per egg</th>
+                                <th class="cell-info" scope="row">1 <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png"> per egg</th>
 
-                                <td class="bg-info">
+                                <td class="cell-info">
                                     <input type="number" id="cell_player_eggs" name="player_eggs" min="0" required>
                                 </td>
 
-                                <td class="bg-info">
+                                <td class="cell-info">
                                     <input type="number" id="cell_automa_public_objectives" name="automa_public_objectives" min="0" required>
                                 </td>
 
-                                <th class="bg-info">Public objectives</th>
+                                <th class="cell-info">Public objectives</th>
                             </tr>
 
                             <tr>
-                                <th class="bg-info" scope="row">1 <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png"> per cached resource</th>
+                                <th class="cell-info" scope="row">1 <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png"> / cached <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/any_resource.png"></th>
 
-                                <td class="bg-info">
+                                <td class="cell-info">
                                     <input type="number" id="cell_player_cached_resources" name="player_cached_resources" min="0" required>
                                 </td>
                                 
-                                <td class="bg-secondary">
+                                <td class="cell-info">
                                     <input class="is_hidden" type="number" id="cell_automa_dragon_guild_fixed_vp" name="automa_dragon_guild_fixed_vp" min="0" required>
                                 </td>
 
-                                <th class="bg-info">
+                                <th class="cell-info">
                                     <div id="cell_dragon_guild_fixed_vp"></div>
                                 </th>
                             </tr>
 
                             <tr>
-                                <th class="bg-info" scope="row">1 <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png"> per tucked card</th>
+                                <th class="cell-info" scope="row">1 <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png"> / tucked <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/dragon_card.png"></th>
 
-                                <td class="bg-info">
+                                <td class="cell-info">
                                     <input type="number" id="cell_player_tucked_cards" name="player_tucked_cards" min="0" required>
                                 </td>
                                 
-                                <td class="bg-secondary"></td>
+                                <td class="cell-info"></td>
 
-                                <th class="bg-info"></th>
+                                <th class="cell-info"></th>
                             </tr>
 
                             <tr>
-                                <th class="bg-info" scope="row"><img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png"> from public objectives</th>
+                                <th class="cell-info" scope="row"><img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png"> from public objectives</th>
 
-                                <td class="bg-info">
+                                <td class="cell-info">
                                     <input type="number" id="cell_player_public_objectives" name="player_public_objectives" min="0" required>
                                 </td>
 
-                                <td class="bg-secondary"></td>
+                                <td class="cell-info"></td>
 
-                                <th class="bg-info"></th>
+                                <th class="cell-info"></th>
                             </tr>
 
                             <tr>
-                                <th class="bg-info" scope="row"><img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png"> from remaining coins & items</th>
+                                <th class="cell-info" scope="row">1 <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png"> per <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/coin.png">, <br> 1 <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png"> per 4 <img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/any_resource.png"><img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/dragon_card.png"><img src="https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/cave_card.png"></th>
 
-                                <td class="bg-info">
+                                <td class="cell-info">
                                     <input type="number" id="cell_player_remaining_resources" name="player_remaining_resources" min="0" required>
                                 </td>
                                 
-                                <td class="bg-secondary"></td>
+                                <td class="cell-info"></td>
 
-                                <th class="bg-info"></th>
+                                <th class="cell-info"></th>
                             </tr>
             
                             <tr>
 
-                                <th class="bg-success" scope="row">Total</th>
+                                <th class="cell-total" scope="row">Total</th>
 
-                                <td class="bg-success">
+                                <td class="cell-total">
                                     <div id="cell_player_total_score"></div>
                                 </td>
 
-                                <td class="bg-success">
+                                <td class="cell-total">
                                     <div id="cell_automa_total_score"></div>
                                 </td>
 
-                                <th class="bg-success"></th>
+                                <th class="cell-total"></th>
                             </tr>
                         </tbody>
                     </table>
@@ -257,24 +250,19 @@
                     <input id="input_automa_total_score" name="automa_total_score"/>
                 </div>
 
-                <div class="row gx-3 mt-3" id="row_reset_submit_buttons">
+                <div class="row gx-3" style="height:7vh;margin-bottom:1vh;" id="row_reset_submit_buttons">
 
-                    <div class="col-6">
-                        <button class="w-100 btn btn-warning nav-button" type="button" id="button_reset_sheet">
+                    <div class="col-6 align-self-center">
+                        <button class="w-100 btn nav-button btn-reset" type="button" id="button_reset_sheet">
                             Reset score sheet
                         </button>
                     </div>
 
-                    <div class="col-6">
-                        <button class="w-100 btn btn-success nav-button" id="submit" name="submit" value = "Score Sheet: Automa" access="false" type="submit" onclick="populate_form_data()">
+                    <div class="col-6 align-self-center">
+                        <button class="w-100 btn nav-button btn-submit" id="submit" name="submit" value = "Score Sheet: Automa" access="false" type="submit">
                             Submit score
                         </button>
                     </div>
-                </div>
-
-                <div class="row p-0 mt-3 justify-content-center margin_auto" id="row_go_back_button">
-
-                    <a class="col-6 btn btn-primary nav-button" href="https://noahbolohan.github.io/wyrmspan-utilities/index.html">Return to home page</a>
                 </div>
             </div>
         </form>
