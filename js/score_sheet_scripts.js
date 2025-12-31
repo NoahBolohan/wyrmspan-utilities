@@ -17,7 +17,7 @@ $(document).ready(
                     "click",
                     function() {
 
-                        var width_p = 55;
+                        var width_p = 46;
 
                         $("#score_sheet_body").data(
                             "n_players",
@@ -52,7 +52,7 @@ function generate_row_headers(width_p) {
             scope : "row"
         }
     ).html(
-        "Markers on the dragon guild"
+        "Markers on <img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/dragon_guild.png'>"
     ).appendTo("#row_markers_on_dragon_guild");
 
     // Amount printed on dragons
@@ -63,7 +63,7 @@ function generate_row_headers(width_p) {
             scope : "row"
         }
     ).html(
-        "<img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> printed on dragons"
+        "<img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> on dragons"
     ).appendTo("#row_printed_on_dragons");
 
     // End-game abilities
@@ -74,7 +74,7 @@ function generate_row_headers(width_p) {
             scope : "row"
         }
     ).html(
-        "<img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> from end-game abilities (<img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/end_game.png'>)"
+        "<img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> from <img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/end_game.png'>"
     ).appendTo("#row_end-game_abilities");
 
     // Eggs
@@ -85,7 +85,7 @@ function generate_row_headers(width_p) {
             scope : "row"
         }
     ).html(
-        "1 <img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> per egg"
+        "1 <img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> per <img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/egg.png'>"
     ).appendTo("#row_eggs");
 
     // Cached resources
@@ -96,7 +96,7 @@ function generate_row_headers(width_p) {
             scope : "row"
         }
     ).html(
-        "1 <img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> per cached resource"
+        "1 <img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> / cached <img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/any_resource.png'>"
     ).appendTo("#row_cached_resources");
 
     // Tucked cards
@@ -107,7 +107,7 @@ function generate_row_headers(width_p) {
             scope : "row"
         }
     ).html(
-        "1 <img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> per tucked card"
+        "1 <img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> / tucked <img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/dragon_card.png'>"
     ).appendTo("#row_tucked_cards");
 
     // Public objectives
@@ -129,7 +129,7 @@ function generate_row_headers(width_p) {
             scope : "row"
         }
     ).html(
-        "<img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> from remaining coins & items"
+        "1 <img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> per <img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/coin.png'>, <br> 1 <img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/victory_points.png'> per 4 <img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/any_resource.png'><img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/dragon_card.png'><img src='https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/icons/cave_card.png'>"
     ).appendTo("#row_remaining_resources");
 
     // Total
@@ -164,12 +164,12 @@ function generate_n_score_columns(n_players, width_p) {
 
         $("<input>").attr(
             {
-                class : "col-12 input-vertical",
+                class : "bg-white col-12 input-vertical",
                 type : "text",
                 id : `input_player_${i}_name`,
                 name : `player_${i}_name`,
                 placeholder : `Player ${i}`,
-                style : "height:80px;"
+                style : "height:9vh;"
             }
         ).appendTo(div);
 

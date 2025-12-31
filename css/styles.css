@@ -128,9 +128,12 @@ table {
     border: none;
 }
 
-input::-webkit-input-placeholder {
-    position: relative;
-    right: 15px;
+input {
+    color: rgba(var(--font-color-headers));
+}
+
+input::placeholder {
+    color: rgba(var(--font-color-headers),0.6);
 }
 
 body {
@@ -298,6 +301,10 @@ outline: 2px solid rgba(var(--font-color-buttons));
     right: 0;
     z-index: 2;
     vertical-align: middle;
+}
+
+.bg-white {
+    background-color: #fefefe!important;
 }
 
 /* Modals */
