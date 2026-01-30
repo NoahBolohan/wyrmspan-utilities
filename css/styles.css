@@ -25,16 +25,13 @@ body {
     margin:0;
     padding:0;
 
-    background-image: url("https://raw.githubusercontent.com/NoahBolohan/wyrmspan-utilities/refs/heads/main/static/box_art/base_game.png");
-
     min-height: 99svh;
     background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
 
-    background-color: rgba(255,255,255,0.7);
-    background-blend-mode: lighten;
+    background-color: rgba(200, 220, 224);
 }
 
 .automa-won-button {
@@ -46,7 +43,7 @@ table td {
 }
 
 td, tr, th {
-    opacity: 0.95;
+    /* opacity: 0.95; */
     border : 1px solid rgba(var(--font-color-buttons));
 }
 
@@ -134,20 +131,6 @@ input {
 
 input::placeholder {
     color: rgba(var(--font-color-headers),0.6);
-}
-
-body {
-    margin:0;
-    padding:0;
-
-    min-height: 99svh;
-    background-attachment: fixed;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    background-color: rgba(255,255,255,0.0);
-    background-blend-mode: lighten;
 }
 
 textarea {
@@ -268,31 +251,6 @@ border-radius: 34px;
 .slider.round:before {
 border-radius: 50%;
 outline: 2px solid rgba(var(--font-color-buttons));
-}
-
-.header-background {
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    display: block;
-    background:url("https://raw.githubusercontent.com/NoahBolohan/wingspan-utilities/refs/heads/main/static/paint_strokes/brush-black-long.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.header-background-for-index-menu {
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    display: block;
-    height:30vh;
-    background:url("https://raw.githubusercontent.com/NoahBolohan/wingspan-utilities/refs/heads/main/static/paint_strokes/brush-black-long.png");
-    background-size: 150% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .header-content {
